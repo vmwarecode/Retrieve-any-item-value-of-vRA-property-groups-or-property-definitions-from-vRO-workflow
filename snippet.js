@@ -36,13 +36,6 @@ function GetLocationByCode(locationID, cafeHost, propertyGroupName,propertyType)
                                     try{
                                     //System.log("Is Encrypted : " + content[i].properties.keys);
                                                 location = content[i].properties[locationID].facets.defaultValue.value.value; 
-                                                System.log(location);
-                                                if((location.length != returnStrCount) && (returnStrCount !=0) )
-                                                {
-                                                            i++;
-                                                            location = content[i].properties[locationID].facets.defaultValue.value.value; 
-                                               
-                                                }
                                                             
                         }catch (ex)
                                     {
