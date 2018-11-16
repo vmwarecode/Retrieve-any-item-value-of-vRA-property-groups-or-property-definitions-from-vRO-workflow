@@ -1,6 +1,6 @@
-var ldUserName = GetLocationByCode("xx.landesk.username", cafeHost, "xx.landesk","propertygroups");
+var ldUserName = GetPropertyValue("xx.landesk.username", cafeHost, "xx.landesk","propertygroups");
                        
-function GetLocationByCode(locationID, cafeHost, propertyGroupName,propertyType)//propertyType = propertygroups / propertydefinitions
+function GetPropertyValue(locationID, cafeHost, propertyGroupName,propertyType)//propertyType = propertygroups / propertydefinitions
 {
             if (!cafeHost) {
                             throw "Missing cafeHost";
